@@ -159,6 +159,26 @@ section {
   margin: 0;
 }
 
+/* Brand story */
+.story {
+  max-width: 760px;
+}
+
+.story-body {
+  font-size: 15px;
+  line-height: 2.3;
+  color: var(--color-text-soft);
+  margin: 0 0 40px;
+}
+
+.story-body:last-child {
+  margin-bottom: 0;
+}
+
+.story-closing {
+  color: var(--color-text);
+}
+
 /* Photo break */
 .photo-break {
   width: 100%;
