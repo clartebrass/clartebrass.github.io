@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clartebrass.github.io/sitemap.xml
