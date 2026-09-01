@@ -41,6 +41,10 @@
   margin: 0;
 }
 
+.featured-work-caption .featured-work-materials {
+  margin-top: 14px;
+}
+
 .featured-work-name {
   margin-bottom: 12px !important;
   color: var(--ink);
