@@ -53,8 +53,16 @@
   white-space: nowrap;
 }
 
+.mobile-break {
+  display: none;
+}
+
 @media (max-width: 760px) {
   .featured-work-images {
     grid-template-columns: 1fr;
+  }
+
+  .mobile-break {
+    display: block;
   }
 }
