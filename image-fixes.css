@@ -61,6 +61,20 @@
   display: none;
 }
 
+.gallery-pair {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6vw;
+  align-items: start;
+}
+
+.gallery-pair .gallery-item,
+.gallery-pair .gallery-item:nth-child(2) {
+  width: 100%;
+  margin: 0;
+}
+
 @media (max-width: 760px) {
   .featured-work-images {
     grid-template-columns: 1fr;
@@ -68,5 +82,16 @@
 
   .mobile-break {
     display: block;
+  }
+
+  .gallery-pair {
+    grid-template-columns: 1fr;
+    gap: 65px;
+  }
+
+  .gallery-pair .gallery-item,
+  .gallery-pair .gallery-item:nth-child(even) {
+    width: 100%;
+    margin: 0;
   }
 }
