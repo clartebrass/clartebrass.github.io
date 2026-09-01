@@ -7,3 +7,28 @@
   object-position: center;
   filter: none;
 }
+
+.featured-work {
+  background: var(--paper);
+}
+
+.featured-work-caption {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 42px 7vw 70px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.featured-work-caption p {
+  margin: 0;
+}
+
+.featured-work-name {
+  margin-bottom: 12px !important;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: .16em;
+}
