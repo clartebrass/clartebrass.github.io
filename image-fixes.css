@@ -1,0 +1,9 @@
+.image-band-full {
+  background: var(--paper);
+}
+
+.image-band-full img {
+  object-fit: contain;
+  object-position: center;
+  filter: none;
+}
