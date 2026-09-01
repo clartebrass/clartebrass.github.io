@@ -49,6 +49,10 @@
   letter-spacing: .16em;
 }
 
+.no-break {
+  white-space: nowrap;
+}
+
 @media (max-width: 760px) {
   .featured-work-images {
     grid-template-columns: 1fr;
