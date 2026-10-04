@@ -169,4 +169,9 @@
   .copy {
     color: #373733;
   }
+
+  /* Give the jewelry more breathing room by moving the full hero text block lower. */
+  .hero-copy {
+    bottom: 7vh;
+  }
 }
