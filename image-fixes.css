@@ -152,3 +152,21 @@
     color: #57524f;
   }
 }
+
+/* Readability: keep body copy softer than headings, but slightly darker than before. */
+.copy {
+  color: #41413d;
+}
+
+/* Keep numerals in 2WAY the same visual height as the letters. */
+.featured-work-name,
+.gallery-item figcaption {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+@media (max-width: 760px) {
+  .copy {
+    color: #373733;
+  }
+}
