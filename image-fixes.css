@@ -175,30 +175,48 @@
     bottom: 4.5vh;
   }
 
-  /* Keep the full-screen mobile menu stable on iPhone/Safari. */
+  /* Compact mobile menu below the header to avoid text overlap in iPhone/Safari. */
   .site-nav {
+    position: fixed;
+    inset: auto 0 auto 0;
+    top: 72px;
     z-index: 45;
-    width: 100vw;
-    height: 100dvh;
-    min-height: 100svh;
-    padding: calc(72px + env(safe-area-inset-top)) 8vw calc(32px + env(safe-area-inset-bottom));
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: calc(100dvh - 72px);
+    padding: 28px 7vw 30px;
+    background: rgba(217,217,214,.985);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 0;
+    justify-content: flex-start;
+    gap: 18px;
     overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
   }
 
-  .site-nav a {
-    display: block;
-    flex: 0 0 auto;
-    margin: 0;
-    padding: 10px 0;
-    line-height: 1.45;
-    text-align: center;
+  .site-nav.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
+  .site-nav a,
   .site-nav a + a {
-    margin-top: 14px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 6px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
   }
 
   .menu-button {
