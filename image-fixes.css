@@ -94,4 +94,61 @@
     width: 100%;
     margin: 0;
   }
+
+  .section-kicker {
+    font-size: 12px;
+    color: #5c5753;
+  }
+
+  .copy {
+    font-size: 15px;
+    color: #3f3f3b;
+    line-height: 2.05;
+  }
+
+  .event {
+    padding-top: 72px;
+    padding-bottom: 90px;
+  }
+
+  .event-date,
+  .event-note {
+    font-size: 14px;
+  }
+
+  .event-note {
+    color: #494945;
+  }
+
+  .featured-work-caption {
+    font-size: 14px;
+    color: #57524f;
+    line-height: 2;
+  }
+
+  .featured-work-name {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .13em;
+  }
+
+  .gallery-item figcaption {
+    font-size: 11px;
+    color: #57524f;
+  }
+
+  .materials article > p:last-child {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .contact-grid > div > p {
+    font-size: 14px;
+    color: #57524f;
+  }
+
+  .contact-form label {
+    font-size: 12px;
+    color: #57524f;
+  }
 }
