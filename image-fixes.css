@@ -174,4 +174,34 @@
   .hero-copy {
     bottom: 4.5vh;
   }
+
+  /* Keep the full-screen mobile menu stable on iPhone/Safari. */
+  .site-nav {
+    z-index: 45;
+    width: 100vw;
+    height: 100dvh;
+    min-height: 100svh;
+    padding: calc(72px + env(safe-area-inset-top)) 8vw calc(32px + env(safe-area-inset-bottom));
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    overflow-y: auto;
+  }
+
+  .site-nav a {
+    display: block;
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  .site-nav a + a {
+    margin-top: 14px;
+  }
+
+  .menu-button {
+    z-index: 50;
+  }
 }
