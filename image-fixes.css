@@ -223,3 +223,15 @@
     z-index: 50;
   }
 }
+
+
+/* Keep multiple event cards clearly separated while preserving the existing layout. */
+.event-card + .event-card {
+  margin-top: 64px;
+}
+
+@media (max-width: 760px) {
+  .event-card + .event-card {
+    margin-top: 42px;
+  }
+}
